@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap");
+
 html {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -33,23 +33,23 @@ section {
 }
 
 .item-1 {
-  background-color: white;
+  background-color:white;
 }
-.item h2 {
+.item-1 h2 {
   color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px; 
+}
+.item-1 h3 {
+  color: rgb(192, 223, 52);
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
-.item-1 h3 {
-  color: hsl(71, 73%, 54%);
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-.item p {
+.item-1 p {
   color: hsl(218, 22%, 67%);
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@ section {
   color: white;
   font-weight: 400;
   font-size: 1.2rem;
-  margin-bottom: 15px;
+  
 }
 .item-2 p {
   color: hsl(204, 43%, 93%);
@@ -69,23 +69,32 @@ section {
   font-weight: 400;
   margin-bottom: 10px;
 }
+  
 .item-2 p span {
   font-weight: 700;
   font-size: 2.5rem;
+  position: relative;
+  top: 5px;
+
+  
 }
+
+
 
 .item-2 .button {
   text-align: center;
   width: 100%;
   padding: 15px;
   background: hsl(71, 73%, 54%);
-  color: white;
+  color: white;  
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 30px;
-  box-shadow: 0px 0px 14px 1px #00000033;
+  position: relative;
+  top: 10px;
   border-radius: 8px;
+  padding: 5% 30%;
+  margin-top: 20px;
 }
 .item-3 {
   background-color: #4abebd;
@@ -94,21 +103,13 @@ section {
   color: white;
   font-weight: 400;
   font-size: 1.3rem;
-  margin-bottom: 15px;
-}
+  }
 .item-3 p {
   color: white;
   line-height: 1.5rem;
-}
-.button:hover {
-  background-color: #3e8e41;
+
 }
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 @media (min-width: 668px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -121,3 +122,13 @@ section {
     grid-row: 2;
   }
 }
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
